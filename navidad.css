@@ -34,18 +34,16 @@ img{
     text-shadow: 0px 2px white;
 
 }
-#error{
-    display: none;
-}
+
 @media all and (orientation:landscape){
-    img, #mensaje, #saludos, button{
-        display:none;
-    }
-    #error{
-        display: flex;
+    img, #mensaje{
+        display:flex;
         align-items: center;
         justify-content: center;
+        width: 75%;
         height: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     }
    

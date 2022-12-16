@@ -71,9 +71,12 @@ function expandir(){
     document.getElementById("saludos").style.width=width+"px"; //Toma el elemento al que se le va a dar el efecto
     console.log(width);//log para ver si suma
   }else{
-    clearInterval(intervalID);
+    clearInterval(intervalID); //limpia el intervalo
   }
 }
+/**
+ * Produce lo mismo que la anterior funcion pero a la reversa.
+ */
 function pequeno(){
   if(width<400){
     width -=diferencia;
@@ -83,6 +86,9 @@ function pequeno(){
     clearInterval(intervalID);
   }
 }
+/**
+ * Funcion encargada de poner musica tomando el id de un boton de html
+ */
 function playMusic() {
   var audio = document.getElementById("musica");
   audio.play();
