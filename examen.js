@@ -27,6 +27,8 @@ setTimeout(function() {
 setTimeout(function() {
     document.getElementById("mensaje");
     mensaje.style.visibility = "visible";
+    document.getElementById("boton");
+    boton.style.visibility = "hidden";
     saludos.style.display = "flex";
     document.getElementById('saludos');
     saludos.style.transform = "rotate(-45deg)"; //Toma el elemento saludos y le cambia el estilo para que con la funcion transform rote. 
@@ -45,6 +47,8 @@ setTimeout(function(){
  */
 setTimeout(function() {
     saludos.style.display = "none";
+    document.getElementById("boton");
+    boton.style.visibility = "visible";
   }, 15000); 
 
 /**
@@ -66,7 +70,7 @@ function incrementar() {
  * Funcion que se encarga de dar efecto hover al texto.
  */
 function expandir(){
-  if(width<400){ //Limita el tamaño de los pixeles
+  if(width<300){ //Limita el tamaño de los pixeles
     width +=diferencia; //Procede a sumar los pixeles para dar el efecto de animacion
     document.getElementById("saludos").style.width=width+"px"; //Toma el elemento al que se le va a dar el efecto
     console.log(width);//log para ver si suma
@@ -78,7 +82,7 @@ function expandir(){
  * Produce lo mismo que la anterior funcion pero a la reversa.
  */
 function pequeno(){
-  if(width<400){
+  if(width<300){
     width -=diferencia;
     document.getElementById("saludos").style.width=width+"px";
     console.log(width);
