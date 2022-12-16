@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="navidad.js"></script>
+    <script src="examen.js"></script>
     <link rel="stylesheet" href="./navidad.css">
     <title>Felicidad</title>
 </head>
 <body>
     <div id="container">
-    <img src="826164.jpg" id="img1">
+    <img src="826164.webp" id="img1">
     <p id="error">PONER EN VERTICAL</p>
-    <p id="saludos" onclick="incrementar()" ondblclick="decrementar()">Felicidad para todos wiiiiii</p>
+        <div id="mensaje">
+            <button onclick="playMusic()">Hoguera</button>
+            <audio id="musica">
+                <source src="./sonido.mp3" type="audio/mpeg">
+            </audio>
+            <p id="saludos" onclick="incrementar()" && onscroll="decrementar()" >Felicidad para todos wiiiiii</p>
+        </div>    
     </div>
+    
 </body>
 </html>

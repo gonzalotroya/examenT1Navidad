@@ -14,7 +14,8 @@ img{
     top: 0;
     left: 0;
 }
-#saludos{
+
+#mensaje{
     background-color:rgba(0,0,0,0.8);
     display: flex;
     position: absolute;
@@ -22,7 +23,8 @@ img{
     justify-content: center;
     height: 100%;
     width: 100%;
-    
+}
+#saludos{
     top: 0;
     left: 0;
 
@@ -36,7 +38,7 @@ img{
     display: none;
 }
 @media all and (orientation:landscape){
-    img{
+    img, #mensaje, #saludos, button{
         display:none;
     }
     #error{
